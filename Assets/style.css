@@ -9,17 +9,24 @@ p, h1, h2 {
     text-align: center;
 }
 body {
-    background-color: darkgray;
+    background-color: darkmagenta;
     height: 100%;
+    width: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 }
 button{
     outline: none;
     color: white;
 }
-
+button:hover{
+    border-color: white;
+}
 li{
     list-style: none;
 }
+
 /*Outer container*/
 .outer-container{
     padding: 10px;
@@ -69,7 +76,13 @@ main{
     display: block;
 }
 .question-card {
-    display: none;
+    display: block;
+}
+.btn{
+    width: 100%;
+}
+.btn:hover{
+    border-color: white;
 }
 /*Finish screen*/
 .finish-screen{
@@ -78,5 +91,5 @@ main{
 
 /* Highscores */
 .highscores {
-    display: block;
+    display: none;
 }

@@ -1,6 +1,82 @@
 *{
-    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid red;
 }
-#bluetext {
-    color: lightskyblue
+p, h1, h2 {
+    color: white;
+    text-align: center;
+}
+body {
+    background-color: darkgray;
+    height: 100%;
+}
+button{
+    outline: none;
+    color: white;
+}
+
+li{
+    list-style: none;
+}
+/*Outer container*/
+.outer-container{
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+/*Top bar*/
+.top-bar button{
+    color: lightskyblue;
+    background-color: transparent;
+    border: none;
+}
+.top-bar p{
+    float: right;
+}
+
+/*Inner box*/
+.inner-container{
+    margin: auto;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*Header/quiz intro*/
+.quiz-intro {
+    margin-bottom: 10%;
+    justify-content: center;
+    display: none;
+}
+.quiz-intro p{
+    text-align: center;
+}
+.quiz-intro button{
+    display: block;
+    width: 50%;
+    margin: auto;
+    background-color: black;
+}
+/*Main Quiz questions*/
+main{
+    display: block;
+}
+.question-card {
+    display: none;
+}
+/*Finish screen*/
+.finish-screen{
+    display: none;
+}
+
+/* Highscores */
+.highscores {
+    display: block;
 }

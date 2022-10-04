@@ -8,18 +8,48 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- Center -->
-    <section>
-        <h1>Coding Quiz Challenge</h1>
-        <p>Click the button to begin!</p>
-    </section>
-    <section>
-
-    </section>
-<!-- Move to top left -->
-    <section>
-        <p>View High Scores</p>
-    </section>
+    <!-- Outer div -->
+    <div class="outer-container">
+        <!-- Top bar w/ View High Scores -->
+        <div class="top-bar">
+            <button>View High Scores</button>
+            <p>Timer: 00:00</p>
+        </div>
+        <div class="inner-container">
+            <!-- Title card -->
+            <header class="quiz-intro">
+                <h1>Coding Quiz Challenge</h1>
+                <p>Click the button to begin!</p>
+                <button>Start Quiz</button>
+            </header>
+            <main>
+                <!-- Questions -->
+                <section class="question-card">
+                    <h1>Question 1</h1>
+                    <ul>
+                        <li><button>A</button></li>
+                        <li><button>B</button></li>
+                        <li><button>C</button></li>
+                        <li><button>D</button></li>
+                    </ul>
+                </section>
+                <!-- Endgame screen -->
+                <section class="finish-screen">
+                    <h2>Finish!</h2>
+                    <p>Your final score is: 00</p>
+                    <label for="">Enter Initials:</label>
+                    <input type="text">
+                    <button>Submit</button>
+                </section>
+                <section class="highscores">
+                    <h2>Highscores</h2>
+                    <ol>
+                        <li>AA: 00</li>
+                    </ol>
+                </section>
+            </main>
+        </div>
+    </div>
     <script src="./Assets/script.js"></script>
 </body>
 </html>

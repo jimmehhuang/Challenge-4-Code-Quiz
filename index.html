@@ -4,52 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
     <link rel="stylesheet" href="./Assets/style.css">
-    <title>Document</title>
 </head>
 <body>
-    <!-- Outer div -->
-    <div class="outer-container">
-        <!-- Top bar w/ View High Scores -->
-        <div class="top-bar">
-            <button>View High Scores</button>
-            <p>Timer: 00:00</p>
-        </div>
-        <div class="inner-container">
-            <!-- Title card -->
-            <header class="quiz-intro">
-                <h1>Coding Quiz Challenge</h1>
-                <p>Click the button to begin!</p>
-                <button>Start Quiz</button>
-            </header>
-            <main>
-                <!-- Questions -->
-                <section class="question-card">
-                    <h1>Question 1</h1>
-                    <ul>
-                        <li><button class="btn">A</button></li>
-                        <li><button class="btn">B</button></li>
-                        <li><button class="btn">C</button></li>
-                        <li><button class="btn">D</button></li>
-                    </ul>
-                </section>
-                <!-- Endgame screen -->
-                <section class="finish-screen">
-                    <h2>Finish!</h2>
-                    <p>Your final score is: 00</p>
-                    <label for="">Enter Initials:</label>
-                    <input type="text">
-                    <button>Submit</button>
-                </section>
-                <section class="highscores">
-                    <h2>Highscores</h2>
-                    <ol>
-                        <li>AA: 00</li>
-                    </ol>
-                </section>
-            </main>
-        </div>
+    <section>
+    <div class="top-bar">
+        <button>View High Scores</button>
+        <p id="timer-display">Timer: 00:00</p>
     </div>
+    <div class="main-container">
+        <header class="quiz-card">
+            <div class="quiz-title">
+                <h1>Coding Quiz Challenge</h1>
+            </div>
+            <div class="quiz-intro">
+                <p class="quiz-info">Welcome! Text your knowledge.</p>
+                <p class="quiz-info">Your score will depend on how many questions you get correct.</p>
+                <p class="quiz-info">Time will be subtracted for each incorrect answer.</p>
+                <p class="quiz-info">Click the button to begin!</p>
+            </div>
+            <div class="buttons">
+                <button class="start-btn">Start Quiz</button>
+            </div>
+        </header>
+        <main>
+            <section class="hidden" class="qcard" id="question-card">
+                <div class="question">
+                    <h1>Commonly used data types do NOT include</h1>
+                </div>
+                <ul class="options">
+                    <li><button class="button">A: Symbols</button></li>
+                    <li><button class="button">B: Strings</button></li>
+                    <li><button class="button">C: Alerts</button></li>
+                    <li><button class="button">D: Numbers</button></li>
+                </ul>
+            </section>
+            <section class="hidden" id="finish-screen">
+                <h2>Finish!</h2>
+                <p>Your final score is: 00</p>
+                <label for="">Enter Initials:</label>
+                <input type="text">
+                <button class="button" id="save">Save score</button>
+            </section>
+            <section class="hidden" id="highscores">
+                <h2>Highscores</h2>
+                <ol>
+                    <li class="score"></li>
+                    <li class="score"></li>
+                    <li class="score"></li>
+                    <li class="score"></li>
+                    <li class="score"></li>
+                </ol>
+                <button class="button" id="delete">Reset</button>
+            </section>
+        </main>
+    </div>
+    </section>
     <script src="./Assets/script.js"></script>
 </body>
 </html>
